@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+const REACT_APP_SNAPSHOT_URL = 'https://snapshot.org/#/soulswap.eth'
 const BASE_URL =
   process.env.REACT_APP_SNAPSHOT_URL || 'https://hub.snapshot.org/api'
 const INDEX_PROPOSALS_PATH = 'index-coop.eth/proposals'

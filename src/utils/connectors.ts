@@ -3,8 +3,10 @@ import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import { LedgerConnector } from './ledgerConnector'
 
-const RPC_URL = process.env.REACT_APP_ETHEREUM_RPC_URL
-const WS_URL = process.env.REACT_APP_ETHEREUM_WS_URL
+// const RPC_URL = process.env.REACT_APP_ETHEREUM_RPC_URL
+const RPC_URL = 'https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161'
+// const WS_URL = process.env.REACT_APP_ETHEREUM_WS_URL
+const WS_URL = 'wss://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161' // TODO
 
 export const NETWORK_CHAIN_ID: number = parseInt(
   process.env.REACT_APP_ETHEREUM_NETWORK_ID ?? '1'
